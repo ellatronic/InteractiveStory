@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492B24711D91AC02005F5FAB /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B24701D91AC02005F5FAB /* InteractiveStory.swift */; };
+		493128241D92E21100E5DC8F /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493128231D92E21100E5DC8F /* PageController.swift */; };
 		4951AA921D919DA400785753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951AA911D919DA400785753 /* AppDelegate.swift */; };
 		4951AA941D919DA400785753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4951AA931D919DA400785753 /* ViewController.swift */; };
 		4951AA971D919DA400785753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4951AA951D919DA400785753 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		492B24701D91AC02005F5FAB /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
+		493128231D92E21100E5DC8F /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		4951AA8E1D919DA400785753 /* InteractiveStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4951AA911D919DA400785753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4951AA931D919DA400785753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4951AA911D919DA400785753 /* AppDelegate.swift */,
 				4951AA931D919DA400785753 /* ViewController.swift */,
 				492B24701D91AC02005F5FAB /* InteractiveStory.swift */,
+				493128231D92E21100E5DC8F /* PageController.swift */,
 				4951AA951D919DA400785753 /* Main.storyboard */,
 				4951AA981D919DA400785753 /* Assets.xcassets */,
 				4951AA9A1D919DA400785753 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493128241D92E21100E5DC8F /* PageController.swift in Sources */,
 				492B24711D91AC02005F5FAB /* InteractiveStory.swift in Sources */,
 				4951AA941D919DA400785753 /* ViewController.swift in Sources */,
 				4951AA921D919DA400785753 /* AppDelegate.swift in Sources */,
