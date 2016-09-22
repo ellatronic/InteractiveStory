@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1I1-dV-Fsg">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1I1-dV-Fsg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,19 +26,35 @@
                                     <segue destination="cIH-rL-hhg" kind="show" identifier="startAdventure" id="ZJz-GB-SZX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbX-DL-c9T">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Y9J-XM-pni"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HZc-To-yK4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OYr-c5-k7y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HZc-To-yK4" secondAttribute="bottom" id="X8a-k4-B7n"/>
+                            <constraint firstItem="yiD-6p-Pai" firstAttribute="top" secondItem="xbX-DL-c9T" secondAttribute="bottom" constant="40" id="ZUV-Lq-PA1"/>
                             <constraint firstItem="yiD-6p-Pai" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8D-2J-5n4"/>
                             <constraint firstAttribute="trailing" secondItem="HZc-To-yK4" secondAttribute="trailing" id="dRS-aV-UHr"/>
+                            <constraint firstItem="xbX-DL-c9T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="kdF-Bi-HmA"/>
                             <constraint firstItem="HZc-To-yK4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kzQ-9C-5X5"/>
+                            <constraint firstItem="xbX-DL-c9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oHa-pw-84k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xbX-DL-c9T" secondAttribute="trailing" constant="24" id="ut1-2p-j0Q"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yiD-6p-Pai" secondAttribute="bottom" constant="48" id="vYJ-Dj-sVC"/>
                             <constraint firstItem="yiD-6p-Pai" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wSE-9x-Wh0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wOv-FW-DOc"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="xbX-DL-c9T" id="7eM-VU-8De"/>
+                        <outlet property="textFieldBottomConstraint" destination="ZUV-Lq-PA1" id="2VN-N7-2VM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
